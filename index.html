@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>구경미 :: 웹퍼블리셔 포트폴리오</title>
-    <link rel="stylesheet" href="web/css/fonts.css">
-    <link rel="stylesheet" href="web/css/reset.css">
-    <link rel="stylesheet" href="web/css/main.css">
-  
-
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="">
 
     <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="web/js/main.js"></script>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="js/rProgressbar-master/dist/js/jQuery.rProgressbar.min.js"></script>
+    <script src="js/main.js"></script>
 
 </head>
 <body>
@@ -41,7 +42,7 @@
             <div class="container">
                 <div class="welcome_txt">
                     <img src="img/po.png" alt="포트폴리오글씨">
-                    <h2 class="typing_txt"></h2>
+                    <h2 class="typing_txt">WEB PUBLISHER</h2>
                     <em class="typing_txt">GU Gyeong Mi</em>
                 </div>
                 <div class="scroll">
@@ -50,7 +51,7 @@
                 </div>
             </div>
         </section>
-        <section class="box left">
+        <section class="box left" id="about">
             <div class="container">
                 <div class="about_box left">
                     <h3>ABOUT</h3>
@@ -69,46 +70,74 @@
             </div> <!-- //container  -->
             <div class="color_box1"></div>
         </section>
-        <section class="box right">
+        <section class="box right" id="skill">
             <div class="container">
                 <div class="skills_box right">
                     <h3>EXPERIENCE</h3>
-                    <img src="img/box1.png" alt="사진">
                     <ul>
                         <li class="txt">교육 및 이력 현항</li>
                         <li></li>
-                        <li>2021. 11 &#126; 2022.04</li>
-                        <li class="txt2">반응형 웹 UI/UX 콘텐츠 제작 전문가(BL) A</li>
-                        <li>2015. 10 &#126; 2021. 07</li>
-                        <li class="txt2">아리랑TV OAP팀</li>
-                        <li>2014. 4 &#126; 2015. 2</li>
-                        <li class="txt2">SBS A&T CG팀</li>
-                        <li>2012. 6 &#126; 2014. 2</li>
-                        <li class="txt2">아리랑TV OAP팀</li>
+                        <li class="txt2">2021. 11 &#126; 2022.04</li>
+                        <li class="txt3">반응형 웹 UI/UX 콘텐츠 제작 전문가(BL) A</li>
+                        <li class="txt2">2015. 10 &#126; 2021. 07</li>
+                        <li class="txt3">아리랑TV OAP팀</li>
+                        <li class="txt2">2014. 4 &#126; 2015. 2</li>
+                        <li class="txt3">SBS A&T CG팀</li>
+                        <li class="txt2">2012. 6 &#126; 2014. 2</li>
+                        <li class="txt3">아리랑TV OAP팀</li>
                     </ul>
                     <div class="line2"></div>
                 </div>
-                <div class="icons">
-                    <ul>
-                        <li><img src="img/html-5_icon.png" alt="html5"></li>
-                        <li><img src="img/css-3_icon.png" alt="css"></li>
-                        <li><img src="img/js.png" alt="js"></li>
-                        <li><img src="img/jq.png" alt="jq"></li>
-                        <li><img src="img/photoshop_icon.png" alt="ps"></li>
-                        <li><img src="img/ai.png" alt="ai"></li>
-                        <li><img src="img/ae.png" alt="ae"></li>
-                    </ul>
-                </div>
-                <div class="graph1">
-                    <span>75%</span>
+                <div class="progress_wrap">
+                    <div class="icons">
+                        <ul>
+                            <li><img src="img/html-5_icon.png" alt="html5"></li>
+                            <li><img src="img/css-3_icon.png" alt="css"></li>
+                            <li><img src="img/js.png" alt="js"></li>
+                            <li><img src="img/jq.png" alt="jq"></li>
+                            <li><img src="img/photoshop_icon.png" alt="ps"></li>
+                            <li><img src="img/ai.png" alt="ai"></li>
+                            <li><img src="img/ae.png" alt="ae"></li>
+                        </ul>
+                    </div>
+                    <div class="progressbar_wrap">
+                        <div class="progressbar">
+                            <div class="html"></div>
+                            <span>80</span>
+                        </div>
+                        <div class="progressbar">
+                            <div class="css"></div>
+                            <span>75</span>
+                        </div>
+                        <div class="progressbar">
+                            <div class="javascript"></div>
+                            <span>60</span>
+                        </div>
+                        <div class="progressbar">
+                            <div class="jquery"></div>
+                            <span>65</span>
+                        </div>
+                        <div class="progressbar">
+                            <div class="psd"></div>
+                            <span>70</span>
+                        </div>
+                        <div class="progressbar">
+                            <div class="ai"></div>
+                            <span>70</span>
+                        </div>
+                        <div class="progressbar">
+                            <div class="ae"></div>
+                            <span>70</span>
+                        </div>
+                    </div>
                 </div>
             </div> <!-- //container  -->
             <div class="color_box2"></div>
         </section>
-        <section class="box left">
+        <section class="box left" id="work1">
             <div class="container">
                 <div class="work1_box left">
-                    <h3>WORK</h3>
+                    <h3>WORK1</h3>
                     <img src="img/box1.png" alt="사진">
                     <ul>
                         <li class="txt">베비언스 홈페이지</li>
@@ -118,32 +147,34 @@
                         <li>디자인 100%</li>
                         <li>HTML / CSS / JQUERY</li>
                     </ul>
+                    <a href="web/babience/index.html">페이지보기</a>
                     <div class="line3"></div>
                 </div> <!-- //work1_box  -->
             </div> <!-- //container  -->
             <div class="color_box3"></div>
         </section>
-        <section class="box right">
+        <section class="box right" id="work2">
             <div class="container">
                 <div class="work2_box right">
-                    <h3>WORK</h3>
+                    <h3>WORK2</h3>
                     <img src="img/box1.png" alt="사진">
                     <ul>
                         <li class="txt">가비아 글로벌 홈페이지</li>
-                        <li class="txt">리뉴얼&#32;&#183;&#32;반응형</li>
+                        <li class="txt">클론코딩</li>
                         <li>제작기간 22.00.00 &#126; 22.00.00</li>
                         <li>퍼블리싱 100%</li>
                         <li>HTML / CSS / JQUERY</li>
                     </ul>
+                    <a href="web/babience/index.html">페이지보기</a>
                     <div class="line4"></div>
                 </div> <!-- //work2_box  -->
             </div> <!-- //container  -->
             <div class="color_box4"></div>
         </section>
-        <section class="box left">
+        <section class="box left" id="work3">
             <div class="container">
                 <div class="work3_box left">
-                <h3>WORK</h3>
+                <h3>WORK3</h3>
                 <img src="img/box1.png" alt="사진">
                 <ul>
                     <li class="txt">수업용 홈페이지</li>
@@ -153,15 +184,16 @@
                     <li>디자인 100%</li>
                     <li>HTML / CSS / JQUERY</li>
                 </ul>
+                <a href="web/babience/index.html">페이지보기</a>
                 <div class="line5"></div>
                 </div> <!-- //work3_box  -->
             </div> <!-- //container  -->
             <div class="color_box5"></div>
         </section>
-        <section class="box right">
+        <section class="box right" id="work4">
             <div class="container">
                 <div class="work4_box right">
-                    <h3>WORK</h3>
+                    <h3>WORK4</h3>
                     <img src="img/box1.png" alt="사진">
                     <ul>
                         <li class="txt">수업용 홈페이지</li>
@@ -171,6 +203,7 @@
                         <li>디자인 100%</li>
                         <li>HTML / CSS / JQUERY</li>
                     </ul>
+                    <a href="web/babience/index.html">페이지보기</a>
                     <div class="line6"></div>
                 </div> <!-- //work4_box  -->
             </div> <!-- //container  -->
