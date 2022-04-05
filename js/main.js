@@ -2,7 +2,6 @@ $(document).ready(function() {
   // 햄버거버튼 클릭시 gnb보임
   $('.ham_button').click(function() {
     $('.allmenu_wrap').show();
-    $('html, body').css({'overflow-y' : 'hidden'});
     $('header').addClass('on');
   });
   
@@ -20,24 +19,49 @@ $(document).ready(function() {
       scrollTop : $('section').eq(n).offset().top
     })
   })
-  
-  // 메인 글씨 타이핑 효과
-  const content = "WEB PUBLISHER"
-  const text = document.querySelector(".typing_txt")
-  let index = 0;
- 
-  function typing(){
-    text.textContent += content[index++]
-    if(index > content.length){
-      text.textContent = ""
-      index = 0;
-    }
-  }
-  setInterval(typing, 300)
-  
-  
-  
 
-
-
+    
+  $('.html').rProgressbar({
+    percentage: $('.html').next('span').text(),
+    fillBackgroundColor: '#fc490b',
+    backgroundColor: '#FFF'
+  });
+  $('.css').rProgressbar({
+    percentage: $('.css').next('span').text(),
+    fillBackgroundColor: '#2196f3',
+    backgroundColor: '#FFF'
+  });
+  $('.javascript').rProgressbar({
+    percentage: $('.javascript').next('span').text(),
+    fillBackgroundColor: '#dab92c',
+    backgroundColor: '#FFF'
+  });
+  $('.jquery').rProgressbar({
+    percentage: $('.jquery').next('span').text(),
+    fillBackgroundColor: '#0868ab',
+    backgroundColor: '#FFF'
+  });
+  $('.psd').rProgressbar({
+    percentage: $('.psd').next('span').text(),
+    fillBackgroundColor: '#00b2ff',
+    backgroundColor: '#FFF'
+  });
+  $('.ai').rProgressbar({
+    percentage: $('.ai').next('span').text(),
+    fillBackgroundColor: '#ffa000',
+    backgroundColor: '#FFF'
+  });
+  $('.ae').rProgressbar({
+    percentage: $('.ae').next('span').text(),
+    fillBackgroundColor: '#dba6ff',
+    backgroundColor: '#FFF'
+  });
+  // let a = $('.html').next('span').text();
+  // $('.html').next('span').text(a + '%');
+  $('.progressbar span').each(function() {
+    $(this).text($(this).text() + '%')
+  })
+  
+  
+  
 });//ready()
