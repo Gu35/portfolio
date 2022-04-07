@@ -85,9 +85,32 @@ $(document).ready(function() {
       left: 0,
     },
   })
-
-
-
+  
+  const myScroll = new LocomotiveScroll({
+    el: document,
+    name: 'scroll',
+    offset: [0, 0],
+    repeat: false,
+    smooth: false, // smooth scroll
+    direction: 'vertical', // or horizontal
+    lerp: 1, // inertia
+    class: 'is-inview',
+    initClass: 'has-scroll-init',
+    scrollbarClass: 'c-scrollbar',
+    scrollingClass: 'has-scroll-scrolling',
+    draggingClass: 'has-scroll-dragging',
+    smoothClass: 'has-scroll-smooth',
+    scrollbarContainer: false,
+    getSpeed: false,
+    getDirection: false,
+    multiplier: 1,
+    firefoxMultiplier: 50,
+    touchMultiplier: 2,
+    scrollFromAnywhere: false,
+    gestureDirection: 'vertical', // or horizontal, both
+    reloadOnContextChange: false,
+    resetNativeScroll: true
+  });
 
  
   
