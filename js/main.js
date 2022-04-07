@@ -66,31 +66,13 @@ $(document).ready(function() {
   $(window).scroll(function(){
     
   });
+  $("").scroll(function(){
+    
+  });
 
 
-  /* scroll effect 
-function scrollEffect(){
-	var controller = new ScrollMagic.Controller();
-	
-	var revealElements = document.querySelectorAll('[data-scroll]');
-	for (var i=0; i<revealElements.length; i++) {
-		
-		var scene = new ScrollMagic.Scene({
-			triggerElement: revealElements[i],
-			triggerHook: 0.9
-		})
-		.setClassToggle(revealElements[i], "on") // add class toggle
-		.addTo(controller);
-	};
 
-	if( $('[data-scroll="steps"]').length ){
-		$('[data-scroll="steps"]').each(function(){
-			$(this).find('[data-step-scroll]').each(function(i){
-				$(this).css('transition-delay',(i*.1)+'s');
-			});
-		});
-	}
-}
-*/
+
+ 
   
 });//ready()
