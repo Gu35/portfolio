@@ -63,12 +63,28 @@ $(document).ready(function() {
   });
 
   //스크롤 이동시 작동코드
-  $(window).scroll(function(){
-    
-  });
-  $("").scroll(function(){
-    
-  });
+  $('.box').fuwatto({
+      // default: 2000
+      duration: 3000
+  })
+  //슬라이드인 애니메이션
+  $('#about, #work1, #work3').fuwatto({
+    slide: 'left-right'
+  })
+  $('#skill, #work2, #work4').fuwatto({
+    slide: 'right-left'
+  })
+  //슬라이드 할 거리 px단위
+  $('').fuwatto({
+    distance: 600
+  })
+  //상하좌우 조정 px단위 기본값:0
+  $('').fuwatto({
+    adjustment: {
+      top: 0,
+      left: 0,
+    },
+  })
 
 
 
