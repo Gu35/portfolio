@@ -1,0 +1,153 @@
+@charset "urf-8";
+
+
+/* common */
+body {
+    font-family: 'Noto Sans KR', '맑은 고딕', 'AppleSDGothicNeo', 'Dotum', 'sans-serif';
+}
+.container {width: 100%;margin: auto;}
+/* width: 1410px; */
+.clrfix:after {content: "";display: block;clear: both;}
+.blind {display: block;width: 1px;height: 1px;overflow: hidden;}
+
+
+/* Skip_Nav */
+.skip_nav {}
+.skip_nav a {
+    display: block;background: var(--orange);color: #fff;line-height: 50px;text-align: center;
+    position: absolute;left: 0;right: 0;top: -50px;
+}
+.skip_nav a:focus {top: 0;}
+
+
+/* header */
+header {position: fixed;top: 0;left: 0;right: 0;z-index: 999;padding: 13px 0 12px 0;background: #fff;border-bottom: 1px solid #aaacaa;}
+header h1 {float: left;margin-left: 20px;}
+header h1 a {display: block;width: 168px;height: 60px;background: url(../img/logo.png) center no-repeat;}
+header ul {float: right;margin-top: 13px;}
+header li {float: left;margin-left: 60px;font-size: 15px;line-height: 35px;}
+header li:last-child {margin-right: 38px;}
+
+
+
+/* footer */
+footer {background: #f6f6f6;}
+
+footer .footer_menu {}
+footer .footer_counsel {float: left;display: block;width: 50%;line-height: 30px;}
+footer .footer_counsel p {font-size: 18px;margin-top: 50px;}
+footer .footer_counsel em {font-size: 32px;font-weight: 400;display: block;padding-bottom: 30px;}
+footer .footer_counsel .counsel_2 {border-radius: 50px;padding: 15px 50px;background: #333;color: #fff;}
+footer .footer_site {margin-bottom: 100px;}
+footer .footer_site div[class*=site] {float: left;width: 235px;margin-top: 50px;}
+footer .footer_site div[class*=site] h2 {font-weight: bold;margin-bottom: 15px;}
+footer .footer_site div[class*=site] ul {font-size: 14px;line-height: 23px;}
+
+footer .footer_site .site_map {}
+footer .footer_site .Family_site {}
+footer .footer_site .site_sns {}
+footer .footer_site .site_sns ul {}
+footer .footer_site .site_sns ul li {float: left;background: #333;border-radius: 50px;margin-right: 5px;width: 35px;height: 35px;}
+
+footer .corp_info {padding: 30px 0; font-size: 14px;color: #a7a9a7;border-top: 1px solid #dddddd;}
+footer .corp_info p {float: right;}
+
+/* visual */
+.visual_wrap {}
+.visual_wrap .gavia {background: url(../img/210614_bg.jpg) no-repeat center;width: 100vw;height: 100vh;position: relative;}
+.visual_wrap .visual_gavia_txt {margin-left: 20px;color: #fff;position: absolute;top: 150px;left: 0;}
+.visual_wrap .visual_gavia_txt img {margin-bottom: 36px;}
+.visual_wrap .visual_gavia_txt strong {font-size: 46px;font-weight: 500;line-height: 1.4;}
+.visual_wrap .visual_gavia_txt p {margin: 38px 0 48px 0;font-size: 18px;font-weight: 100;}
+.visual_wrap .visual_gavia_txt span {display: inline-block;padding: 16px 50px;font-size: 14px;font-weight: 100;border: 1px solid #fff;border-radius: 35px;}
+
+
+.visual_wrap .control {text-align: center;}
+.visual_wrap button {width: 12px;height: 12px;border: 1px solid #fff;border-radius: 50%;}
+.visual_wrap .playcontrol {display: none;}
+.visual_wrap .visual_kosme_txt {display: none;}
+.visual_wrap .visual_alibaba_txt {display: none;}
+
+/* main */
+main {}
+main h2{font-size: 40px;font-weight: 700;}
+
+
+main .export_wrap {padding-top: 112px;}
+main .export_wrap h2 {text-align: center;line-height: 50px;color: #333;}
+main .export_wrap ul {}
+main .export_wrap li {float: left;width: 45%;padding: 6% 0;margin-left: 3%;}
+
+main .export_wrap img {float: left;margin: 0 37px;border-radius: 50%;background: #f6f6f6;}
+main .export_wrap em {font-size: 20px;}
+main .export_wrap p {margin-top: 30px;font-size: 16px;line-height: 1.4;color: #aaacaa;}
+
+
+main .shopping_wrap {padding-top: 112px;}
+main .shopping_wrap h2 {text-align: center;line-height: 50px;color: #333;border-top: 1px solid #aaacaa;padding-top: 140px;}
+main .shopping_wrap ul {}
+main .shopping_wrap li {float: left;width: 45%;padding: 6% 0;margin-left: 3%;}
+main .shopping_wrap img {float: left;margin: 0 37px;border-radius: 50%;background: #f6f6f6;}
+main .shopping_wrap em {font-size: 20px;}
+main .shopping_wrap p {margin-top: 30px;font-size: 16px;line-height: 1.4;color: #aaacaa;}
+
+
+main .reason_wrap {background: #f6f6f6;padding-top: 112px;}
+main .reason_wrap h2 {float: left;width: auto;margin-left: 20px;text-align: left;line-height: 50px;color: #333;}
+main .reason_wrap ul {}
+main .reason_wrap ul li {float: left;width: 30%;padding: 20px 20px;margin: 0 7px 15px;background: #fff;}
+main .reason_wrap ul li:last-child {}
+main .reason_wrap ul .img1 {margin-left: 180px;}
+main .reason_wrap ul .img3, main .reason_wrap ul .img5 {margin-left: 455px;}
+main .reason_wrap ul li p {float: left;font-size: 16px;line-height: 1.4;color: #aaacaa;}
+main .reason_wrap ul li:last-child {width: calc(487px * 2 + 14px);}
+main .reason_wrap img {float: left;margin-right: 20px;}
+
+main .ask_wrap {background: url(../img/bg_ask.jpg);padding-top: 94px;text-align: center;color: #fff;}
+main .ask_wrap p {font-size: 20px;font-weight: 100;margin: 39px 0 34px 0;}
+main .ask_wrap .telephone {display: block;margin-bottom: 37px;font-size: 40px;font-weight: 500;}
+main .ask_wrap .counsel_1 {display: inline-block;padding: 16px 57px;margin-bottom: 80px; font-size: 15px;border: 1px solid #fff;border-radius: 35px;}
+
+
+
+main .news_wrap {padding: 142px 0 102px 0;}
+main .news_wrap h2 {margin-bottom: 50px;text-align: left;color: #333;}
+main .news_wrap li {float: left;width: 323px;margin-right: 38px;}
+main .news_wrap li:last-child {margin-right: 0;}
+main .news_wrap li .img {width: 323px;height: 180px;overflow: hidden;margin-bottom: 15px;}
+main .news_wrap li img {width: 100%;height: auto;background-size: contain;}
+main .news_wrap li span {color: #a7a9a7;font-size: 12px;}
+main .news_wrap li .label_news {padding: 5px;border: 1px solid #dddddd;border-radius: 5px;font-size: 12px;color: #848684;}
+main .news_wrap li .news_box p {font-size: 14px;line-height: 1.3;}
+main .news_wrap li .news_box .title {margin: 15px 0;font-size: 16px;font-weight: bold;line-height: 1.3;}
+main .news_wrap li .news_box .explain {color: #848684;margin-bottom: 20px;}
+
+
+
+/* Mobail */
+@media screen and (max-width: 501px) {
+    header ul {display: none;}
+}
+
+/* Tablet_1*/
+@media screen and (max-width: 800px) { 
+    header ul {display: none;}
+    header button {float: right;width: 60px;height: 60px;background: #fff;border: 1px solid #fff;}
+    header button .line {display: block;width: 30px;height: 3px;background: #333;margin-top: 6px;}
+    
+
+}
+
+/* Tablet_2*/
+@media screen and (min-width: 801px) and (max-width: 1180px) { 
+    header button {display: none;}
+    
+}
+
+/* PC */
+@media screen and (min-width: 1181px) {
+    .container {min-width: 1181px;max-width: 1410px}
+    header button {display: none;}
+
+    
+}
